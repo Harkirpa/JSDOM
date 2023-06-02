@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: brown;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    top:100px;
+    position:absolute;
+     
+}
+.between {
+    font-size:3rem;
+    top: 20px;
+    left:800px;
+    color:white;
+    position:absolute;
+}
+button{
+     position: absolute;
+    top: 1rem;
+    width:110px;
+    height:67px;
+}
+.number{
+    position: absolute;
+    width:127px;
+    height:86px;
+    left:45%;
+    top:229px;
+    background-color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+.check{
+    position: absolute;
+    left:13%;
+     top:459px;
+}
+.guess{
+    position: absolute;
+    width:180px;
+    left:10%;
+    top:326px;
+    height:86px;
+    background:none;
+    text-align: center;
+    font-size: xx-large;
+    border:4px solid white;
+   
+}
+
+.message {
+   position:absolute;
+    height: 3rem;
+   left:500px;
+   bottom:238px;
+    font-size: 3rem;
+    color: white;
+}
+
+.label-score {
+    position:absolute;
+    left:500px;
+    bottom:200px;
+    color:white;
+}
+.label-highscore{
+    position:absolute;
+    left:500px;
+    bottom:170px;
+    color:white;
+}

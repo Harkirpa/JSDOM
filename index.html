@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="dom">*DOM HANDSON*</h1>
+    <hr>
+    <div class="questions">
+    <h3>1.Write the code to access element which is having id as"text"</h3>
+   
+    <p>  let hy= document.getElementById("text");</p>
+       <p> console.log(hy);</p>
+       <div id="text">Hello Prepbytes</div>
+       
+    <hr>
+     <h3>2.Write the code to access element which is having tag as"h1"</h3> 
+     <p>let second=document.getElementsByTagName("h1");</p>
+       <p> console.log(second);</p>
+       <h1>Full Stack</h1>
+        <hr> 
+     <h3>3.Write the code to access element which is having class as"box"</h3>
+     <p>let third=document.getElementsByClassName("box");</p>
+      <p>  console.log(third);</p>
+
+    <hr>
+    <h3>4.Change the heading from "Hello" to "Hello World" using DOM functions.</h3>
+    <h2 class="change">Hello</h2>
+    <P>var a=document.getElementsByClassName("change");</P>
+       <p> console.log(a[0].innerHTML);</p>
+        
+       <p> a[0].addEventListener('click',() =>{
+                     a[0].innerHTML="Hello World";}</P>
+    <hr>
+    <h3>5.Create an HTML page having content as Hello world and a button named Replace Text.
+         When user will click on this button page content 
+         should be changed to "Welcome to Elevation academy"</h3> 
+         <h3 class="changetext">Hello World</h3>
+         <button onclick="trans()">Replace Text</button>
+         <p>var b=document.getElementsByClassName("changetext");</p>
+           <p> console.log(b[0].innerHTML);</p>
+            
+           <p> function trans(){
+                        b[0].innerHTML="Welcome To Elevation Academy";</p>
+      <hr>
+    <h3>6.Add one style attribute and give text color as red and id attribute 
+        and give the id value as ""heading"" in the above given h1 tag using DOM functions</h3> 
+        <p>let heads = document.getElementById("heading");</p>
+            <p>console.log(heads);</p>
+           <p> heads.style.color="red"</p>
+           <p> heads.style.fontSize="50px"</p>
+        <h1 id="heading">Hello</h1>
+<hr>
+<h3>7.Create three cards on HTML page and arrange
+     them using flex property in row or horizontal direction and
+      also create button at the bottom named "Change Flex direction".
+       When user clicks on this button, the cards arrangement should be changed to vertical direction.</h3>
+       
+       <div class="cont">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+       </div>
+       <button onclick="boxes()">Click Me</button>
+       <p>let heads = document.getElementById("heading");</p>
+<p>let c=document.querySelector(".cont");</p>
+      <p>  let count=true;</p>
+        <p>function boxes(){</p>
+         <p>   if(count){</p>
+        
+            <p>    c.style.display='block';</p>
+               <p> count=false;</p>
+            }
+            <p>else{</p>
+              <p>  c.style.display='flex';</p>
+               <p> count=true;</p>
+            }
+        }</p>
+       <hr>
+       <h3>8.Difference between window vs document.</h3>
+       <table  border="2">
+       
+        <tr>
+            <td>Document</td>
+            <td>It represents any HTML document or web page that is loaded in the browser</td>
+            <td>It is loaded inside the window.</td>
+            <td>It is the object of window property</td>
+            <td>The document is part of BOM (browser object model) and dom (Document object model)</td>
+            <td>syntax: document.propertyname</td>
+        </tr>
+       
+        <tr>
+            <td>Object</td>
+            <td>It represents a browser window or frame that displays the contents of the webpage.</td>
+            <td>It is the very first object that is loaded in the browser.</td>
+            <td>It is the object of the browser</td>
+            <td>The window is part of BOM, not DOM</td>
+            <td>syntax:window.propertyname</td>
+        </tr>
+       </table>
+       <hr>
+       <h5>9.Start Clock</h5>
+       <h5></h5>
+<a href="./index3.html">Guess Number</a>
+</div>
+    <script src="./script.js"></script>
+
+</body>
+</html>

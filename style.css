@@ -1,0 +1,23 @@
+body{
+    background-color: pink;
+}
+.dom{
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+}
+.cont{
+    display:flex;
+    gap:10px;
+}
+.box{
+    width:200px;
+    height:200px;
+    border:1px solid blue;
+}
+h5{
+    font-size: 2rem;
+}
+
+
+
