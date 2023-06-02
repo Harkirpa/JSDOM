@@ -1,6 +1,6 @@
 //guess
 let inputvalue=document.querySelector('input');
-let bodies=document.getElementsByName('body');
+
 let output=document.getElementsByClassName('message');
 let marks=document.getElementsByClassName('score');
 let guess=document.getElementsByClassName('number');
@@ -25,7 +25,7 @@ function maincheck(){
     else{
         output[0].innerHTML=("😀😀Hurray you won😀😀");
         guess[0].innerHTML=inputvalue.value;
-        bodies.style.color="green";
+        
         higher[0].innerHTML=(counted);
         marks[0].innerHTML=(counted);
     }
