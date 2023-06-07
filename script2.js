@@ -25,8 +25,12 @@ function maincheck(){
     else{
         output[0].innerHTML=("😀😀Hurray you won😀😀");
         guess[0].innerHTML=inputvalue.value;
-        
+       
         higher[0].innerHTML=(counted);
         marks[0].innerHTML=(counted);
     }
+}
+
+function again(){
+    location.reload('parent')
 }
